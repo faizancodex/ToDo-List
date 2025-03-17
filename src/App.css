@@ -2,37 +2,72 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
+  width: 500px;
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+}
+
+form input{
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color:  #f8f8f8;
+  height: 50px;
+  border: 1px grey solid;
+  color: #4a4a4a;
+  outline: none;
+  flex-basis: 85%;
+  font-size: 20px
+}
+form button{
+  flex-basis: 15%;
+  border-radius: 5px;
+  background-color: #4a4a4a;
   color: white;
+  font-size: 35px;
+  border: 1px #4a4a4a solid;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+
+.outerdiv{
+  width: 500px;
+  margin: auto;
+  margin-top: 25px;
+
+}
+.outerdiv ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.outerdiv ul li{
+  padding: 15px;
+  color: #4a4a4a;
+  background-color: #dcdcdc;
+  border-radius: 5px;
+  position: relative;
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.outerdiv ul li .cross-btn{
+  height: 100%;
+  width: 70px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4a4a4a;
+  color: white;
+  font-size: 35px;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  cursor: pointer;
+}
+
+.checktodolist{
+  text-decoration: line-through;
 }
